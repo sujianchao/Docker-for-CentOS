@@ -21,4 +21,5 @@ RUN ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key
 # 启动sshd服务并且暴露相关端口
 RUN mkdir /var/run/sshd
 EXPOSE 22
-CMD ["/usr/sbin/sshd", "-D"]
+VOLUME [ "/sys/fs/cgroup" ]
+CMD ["/usr/sbin/init"]
