@@ -1,4 +1,4 @@
-FROM daocloud.io/centos:7
+FROM daocloud.io/itjfwcn/centos-systemd:master-init
 
 # 签名
 MAINTAINER SuJianchao "sujianchao@gmail.com"
