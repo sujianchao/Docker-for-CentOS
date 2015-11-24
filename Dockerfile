@@ -5,7 +5,7 @@ MAINTAINER SuJianchao "sujianchao@gmail.com"
 
 #更新系统，安装git
 RUN yum -y update; yum clean all; 
-RUN yum install git;
+RUN yum install -y git;
 
 # 安装openssh-server和sudo软件包，并且将sshd的UsePAM参数设置成no
 RUN yum install -y openssh-server sudo
